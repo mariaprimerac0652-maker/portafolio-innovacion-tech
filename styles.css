@@ -1,0 +1,187 @@
+/* ==========================================================================
+   1. RESET Y CONFIGURACIÓN GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   2. MARQUESINA VISUAL (Animación CSS3 Moderna)
+   ========================================================================== */
+.marquesina-container {
+    background-color: #d69e2e; /* Color dorado/alerta */
+    color: #1a202c;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.marquesina-texto {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquesina 18s linear infinite;
+}
+
+@keyframes marquesina {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* ==========================================================================
+   3. ENCABEZADO Y NAVEGACIÓN
+   ========================================================================== */
+header {
+    background-color: #1a365d; /* Azul corporativo */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.subtitulo-header {
+    font-size: 1rem;
+    color: #cbd5e0;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #63b3ed; /* Azul claro al pasar el cursor */
+}
+
+/* ==========================================================================
+   4. ESTRUCTURA PRINCIPAL Y FORMATEO DE TEXTO
+   ========================================================================== */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #1a365d;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #3182ce;
+    padding-left: 10px;
+}
+
+h3 {
+    color: #2b6cb0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   5. IMÁGENES OPTIMIZADAS
+   ========================================================================== */
+.imagen-destacada {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.imagen-destacada img {
+    max-width: 100%; /* Garantiza que sea responsive */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   6. LÍNEAS DIVISORIAS Y LISTAS
+   ========================================================================== */
+.divisor {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 30px 0;
+}
+
+.tarjeta-info {
+    background-color: #ebf8ff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.lista-valores {
+    margin-left: 20px;
+}
+
+.lista-valores li {
+    margin-bottom: 8px;
+}
+
+.lista-servicios {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.lista-servicios li {
+    padding: 5px 0;
+}
+
+/* ==========================================================================
+   7. PIE DE PÁGINA
+   ========================================================================== */
+footer {
+    background-color: #2d3748;
+    color: #a0aec0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
